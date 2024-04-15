@@ -40,10 +40,10 @@ class QuizInterface:
 
             if self.Final_complete:
                 with open("feedback.txt","a") as feed:
-                    feed.write(f"An User Liked your program at {datetime.now()}")
+                    feed.write(f"\nAn User Liked your program at {datetime.now()}")
             else:
                 with open("feedback.txt","a") as feed:
-                    feed.write(f"An User DisLiked your program at {datetime.now()}")
+                    feed.write(f"\nAn User DisLiked your program at {datetime.now()}")
             self.window.destroy()
 
         else:
